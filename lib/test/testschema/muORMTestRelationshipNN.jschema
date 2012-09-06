@@ -1,0 +1,15 @@
+{
+    "muORMTestObjectProperty" :     { "type" : "string", "defaultValue" : "N to N default string value" },
+    "muORMTestRelationshipObject" :
+    {
+        "type"          : "relationship",
+        "cardinality"   : 0,
+        "destination"   : "muORMTestNNRelationShip",
+        "inverse"       : "muORMTestNNInverse",
+        "defaultValue"  :
+        {
+            "muORMTestNNObjectInChild":     15,
+            "muORMTestNNInverse":           [ ]
+        }
+    }
+}
