@@ -1,5 +1,0 @@
-{
-    "muORMTestStorageTypeVolatile":     { "type" : "string", "defaultValue" : "volatile string", "storageType" : "volatile" },
-    "muORMTestStorageTypeSession":      { "type" : "string", "defaultValue" : "session string", "storageType" : "session" },
-    "muORMTestStorageTypePersistent":   { "type" : "string", "defaultValue" : "persistent string", "storageType" : "persistent" }
-}

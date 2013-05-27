@@ -1,0 +1,6 @@
+{
+    "muORMTestStorageTypePersistentProperty1":    { "type" : "string", "defaultValue" : "persistent property 1 string" },
+    "muORMTestStorageTypePersistentProperty2":    { "type" : "string", "defaultValue" : "persistent property 2 string" },
+    "muORMTestStorageTypePersistentProperty3":    { "type" : "string", "defaultValue" : "persistent property 3 string" },
+    "muStorageType" : "persistent"
+}

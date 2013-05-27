@@ -2,7 +2,10 @@ muORMTestDate.jschema
 muORMTestMix.jschema
 muORMTestNumeric.jschema
 muORMTestString.jschema
-muORMTestStorageType.jschema
+muORMTestStorageVolatile.jschema
+muORMTestStorageSession.jschema
+muORMTestStoragePersistent.jschema
+muORMTestStoragePersistentWithPath.jschema
 muORMTestRelationship1N.jschema
 muORMTestRelationship11.jschema
 muORMTestRelationshipNN.jschema
