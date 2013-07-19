@@ -1,0 +1,10 @@
+{
+	"muORMTestStorageTypePersistentMySQLProperty1":    { "type" : "string", "defaultValue" : "persistent mysql property 1 string" },
+	"muORMTestStorageTypePersistentMySQLProperty2":    { "type" : "string", "defaultValue" : "persistent mysql property 2 string" },
+	"muORMTestStorageTypePersistentMySQLProperty3":    { "type" : "string", "defaultValue" : "persistent mysql property 3 string" },
+	"muStorageType" : "persistent",
+	"muStorageDriverName" : "mysql",
+	"muStoragePathOrURI" : "localhost\/test",
+	"muStorageUserLogin" : "muTest",
+	"muStorageUserPassword" : "mUt3ST"
+}

@@ -1,0 +1,13 @@
+{
+	"containBerry" :        { "type" : "numeric", "defaultValue" : 0 },
+	"containNut" :          { "type" : "numeric", "defaultValue" : 0 },
+	"containShellfish" :    { "type" : "numeric", "defaultValue" : 0 },
+	"energy" :              { "type" : "numeric", "defaultValue" : 0 },
+	"longdescription" :     { "type" : "string", "defaultValue" : "no long description given" },
+	"name" :                { "type" : "string", "defaultValue" : "no name given" },
+	"price" :               { "type" : "numeric", "defaultValue" : 0 },
+	"weight" :              { "type" : "numeric", "defaultValue" : 0 },
+	"hasIngredients" :      { "type" : "numeric", "defaultValue" : 0 },
+	"isCommandedDish" :     { "type" : "numeric", "defaultValue" : 0 },
+	"partofMenuPart" :      { "type" : "numeric", "defaultValue" : 0 }
+}

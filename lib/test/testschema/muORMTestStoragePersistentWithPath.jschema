@@ -3,5 +3,5 @@
     "muORMTestStorageTypePersistentProperty2":    { "type" : "string", "defaultValue" : "persistent property 2 string" },
     "muORMTestStorageTypePersistentProperty3":    { "type" : "string", "defaultValue" : "persistent property 3 string" },
     "muStorageType" : "persistent",
-    "muStoragePathOrURI" : "/tmp/testWithPath"
+    "muStoragePathOrURI" : "/tmp/testWithPath/"
 }
