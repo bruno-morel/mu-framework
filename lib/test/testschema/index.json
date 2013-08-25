@@ -1,0 +1,14 @@
+[
+	"muORMTestDate.jschema",
+	"muORMTestMix.jschema",
+	"muORMTestNumeric.jschema",
+	"muORMTestRelationship11.jschema",
+	"muORMTestRelationship1N.jschema",
+	"muORMTestRelationshipNN.jschema",
+	"muORMTestRelationshipNN2.jschema",
+	"muORMTestStoragePersistent.jschema",
+	"muORMTestStoragePersistentWithPath.jschema",
+	"muORMTestStorageSession.jschema",
+	"muORMTestStorageVolatile.jschema",
+	"muORMTestString.jschema"
+]

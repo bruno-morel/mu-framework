@@ -5,6 +5,6 @@
 	"muStorageType" : "persistent",
 	"muStorageDriverName" : "mysql",
 	"muStoragePathOrURI" : "localhost\/test",
-	"muStorageUserLogin" : "muTest",
+	"muStorageUserLogin" : "muTestRW",
 	"muStorageUserPassword" : "mUt3ST"
 }

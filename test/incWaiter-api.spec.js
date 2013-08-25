@@ -22,7 +22,7 @@ describe( "Incredible Waiter", function()
 		expect( Ingredient ).toBeDefined( );
 	});
 
-	it( "the schema create the right type of objects (we just test Dish and Ingredient", function()
+	it( "the schema create the right type of objects (we just test Dish and Ingredient)", function()
 	{
 		var newDish = new Dish( { 'name' : "testName", 'longdescription' : "testLongDescription" } );
 		var newIngredient = new Ingredient( );
@@ -30,6 +30,7 @@ describe( "Incredible Waiter", function()
 		expect( newDish.containBerry ).toBeDefined( );
 		expect( newDish.containNut ).toBeDefined( );
 		expect( newDish.name ).toEqual( "testName" );
+		expect( newIngredient.name ).toEqual( "no name given" );
 
 		newDish.relInstance( );
 		newIngredient.relInstance( );
