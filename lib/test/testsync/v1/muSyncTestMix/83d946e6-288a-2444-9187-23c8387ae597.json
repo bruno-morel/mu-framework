@@ -1,5 +1,5 @@
 {
-	"muORMTestMixString":       "first muSyncTestMixString",
-	"muORMTestMixDate":         "03/12/2012",
-	"muORMTestMixNumeric":      15
+	"muSyncTestMixString":       "first muSyncTestMixString",
+	"muSyncTestMixDate":         "03/12/2012",
+	"muSyncTestMixNumeric":      15
 }
