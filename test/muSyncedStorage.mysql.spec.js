@@ -5,9 +5,9 @@
  * muSync using mysql storage Jasmine BDD specification
  */
 
-mu.require( 'muSync' );
-mu.require( 'muStorage' );
-mu.require( 'muBrowser' );
+mu.require( '../src/muSync' );
+mu.require( '../src/muStorage' );
+mu.require( '../src/muBrowser' );
 
 
 //mysql is server side specific

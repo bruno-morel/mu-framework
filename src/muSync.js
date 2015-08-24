@@ -395,7 +395,7 @@ mu.require( 'timers' );
 				that.objectInstances[ objectToGet ][ idToGet ] = new that.objectList[ objectToGet ]( idToGet );
 
 			if( createNew ||
-				    //we agressively update the object if the remote object has no timestamp
+				    //we aggressively update the object if the remote object has no timestamp
 				( that.objectInstances[ objectToGet ][ idToGet ].muSyncStamp &&
 				  !objectPropertiesAndValue.muSyncStamp ) ||
 			    ( that.objectInstances[ objectToGet ][ idToGet ].muSyncStamp &&
@@ -857,20 +857,12 @@ mu.require( 'timers' );
                                 html += '</dd>';
                             }
                         }
-                        /*
-                        else if( typeof( object[ currentValueName ] ) == 'object' &&
 
+                        else if( typeof( object[ currentValueName ] ) == 'object' &&
                                  Object.prototype.toString.apply( object[ currentValueName ] ) == '[object Date]' )
-	                        html += '<li>' +
-	                                object[ currentValueName ].() + '-' +
-	                                object[ currentValueName ].getUTCMonth() + '-' +
-	                                object[ currentValueName ].getUTCDay( ) + ' ' +
-	                                object[ currentValueName ].getUTCHours( ) + ':' +
-	                                object[ currentValueName ].getUTCMinutes( ) + ':' +
-	                                object[ currentValueName ].getUTCSeconds( ) +
-	                                '</li>';
+	                        html += '<dd>' + object[ currentValueName ].toISOString() + '</dd>';
 							//Mon Mar 12 2012 00:00:00 GMT-0400 (EDT)
-                        */
+
                         else
                             html += '<dd>' + object[ currentValueName ] + '</dd>';
                     }

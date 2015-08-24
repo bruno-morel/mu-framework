@@ -5,7 +5,7 @@
  * muSync BDD (muJasmine) specification file for the client side
  *
  */
-mu.require( 'muSync' );
+mu.require( '../src/muSync' );
 
 
 describe( "muSync", function()

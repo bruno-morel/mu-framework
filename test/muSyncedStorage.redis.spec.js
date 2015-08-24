@@ -5,9 +5,9 @@
  * muSync using Redis storage Jasmine BDD specification
  */
 
-mu.require( 'muSync' );
-mu.require( 'muStorage' );
-mu.require( 'muBrowser' );
+mu.require( '../src/muSync' );
+mu.require( '../src/muStorage' );
+mu.require( '../src/muBrowser' );
 
 
 //redis is server side specific

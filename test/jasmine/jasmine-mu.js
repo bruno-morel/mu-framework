@@ -24,14 +24,14 @@ var TrivialReporter = function( doc, config )
 
     if( config == null )
     {
-        this.print_     = util.print;
+        this.print_     = console.log;
         this.callback_  = false;
         this.verbose_   = false;
         this.indent_    = 0;
     }
     else
     {
-        this.print_     = config.print || util.print;
+        this.print_     = config.print || console.log;
         this.callback_  = config.onComplete || false;
         this.verbose_   = config.verbose || false;
         this.indent_    = config.indent || 0;

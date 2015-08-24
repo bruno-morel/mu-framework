@@ -5,7 +5,7 @@
  *
  * muStorage BDD (muJasmine) specification file
  */
-mu.require( 'muStorage' );
+mu.require( '../src/muStorage' );
 
 
 describe( "muStorage", function()

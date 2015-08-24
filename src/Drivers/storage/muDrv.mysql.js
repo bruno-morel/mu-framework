@@ -23,6 +23,7 @@ mu.require( 'mysql' );
     exports.Storages        = { };
     exports.prepare         = function( storagePathOrURI, userLogin, userPassword, params )
     {
+
         var     mySQLDrv        = this;
         var     storageURL      = ( storagePathOrURI.indexOf( 'mysql://' ) != -1 ? storagePathOrURI :
                                     ( 'mysql://' +
@@ -31,7 +32,13 @@ mu.require( 'mysql' );
                                         ( userLogin != null ? '@' : '' ) +
                                         ( storagePathOrURI == null ? 'localhost' : storagePathOrURI ) ) );
 
-	    mySQLDrv.driverName = "mysql";
+        if( !mu.support_mysql )
+        {
+            mu.error( 'No MySQL driver present - skipping ' + storageURL );
+            return;
+        }
+
+        mySQLDrv.driverName = "mysql";
 	    mySQLDrv.enginePath = ( mu.runinbrowser ? 'muDrv.mysql.js' : __filename );
 
         if( mySQLDrv.ownInstance == null )

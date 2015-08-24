@@ -4,7 +4,7 @@
  *
  * MuSync muStorage driver BDD (muJasmine) specification file
  */
-mu.require( 'muStorage' );
+mu.require( '../src/muStorage' );
 
 //musync is client side specific
 if( mu.runinbrowser )

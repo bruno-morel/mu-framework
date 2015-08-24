@@ -100,6 +100,10 @@
                 );
     };
 
+    exports.supportLibs         = [ 'mysql', 'redis' ];
+    exports.support_mysql       = false;
+    exports.support_redis       = false;
+
     // some global function
     exports.included = function( src, dontWarn )
     {
@@ -185,9 +189,9 @@
             {
                 mu.debug( 'trying to include ' + finalSrcPath );
                 try{ require.resolve( finalSrcPath ) }
-                catch( e )
+                catch( errorRequire )
                 {
-                    exports.error( e.message );
+                    exports.error( errorRequire.message );
                     finalSrcPath = this.muPath + finalSrcPath;
                     mu.debug( 'failed to include ' + finalSrcPath );
                 }
@@ -199,7 +203,12 @@
         //in node.js, we just use the system require
         if( typeof window === "undefined" )
         {
-            var returnedFromRequire = require( finalSrcPath );
+            var returnedFromRequire = null;
+
+            try{ returnedFromRequire = require( finalSrcPath ); }
+            catch( requireError ){ console.error( requireError ); }
+            if( returnedFromRequire != null && ( this.supportLibs.indexOf( includename ) != -1 ) )
+                this[ 'support_' + includename ] = true;
 
             // we setup a mu variable with the name of the script
             this[ includename ] = returnedFromRequire;

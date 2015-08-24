@@ -4,7 +4,7 @@
  *
  * Redis muStorage driver BDD (muJasmine) specification file
  */
-mu.require( 'muStorage' );
+mu.require( '../src/muStorage' );
 
 //redis is server side specific
 if( !mu.runinbrowser )

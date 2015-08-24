@@ -8,7 +8,7 @@
 
 //WARNING : for this test to run, a mysql user must be configured with access to the schema 'test' on localhost,
 //          or you must change line 18 connection parameters
-mu.require( 'muStorage' );
+mu.require( '../src/muStorage' );
 
 //mysql is server side specific
 if( !mu.runinbrowser )

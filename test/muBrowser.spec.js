@@ -3,7 +3,7 @@
  * Date: 12-05-22
  * Time: 4:08 PM
  */
-mu.require( 'muBrowser' );
+mu.require( '../src/muBrowser' );
 mu.require( 'http' );
 
 

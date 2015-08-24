@@ -6,7 +6,7 @@
  */
 
 if( !mu.runinbrowser )
-	mu.require( '../test/muSyncedORM.serv.spec.js' );
+	mu.require( 'muSyncedORM.serv.spec.js' );
 
 else
-	mu.require( '../test/muSyncedORM.client.spec.js' );
+	mu.require( 'muSyncedORM.client.spec.js' );

@@ -6,9 +6,9 @@
  */
 
 
-mu.require( 'muSync' );
-mu.require( 'muStorage' );
-mu.require( 'muBrowser' );
+mu.require( '../src/muSync' );
+mu.require( '../src/muStorage' );
+mu.require( '../src/muBrowser' );
 
 if( !mu.runinbrowser )
 describe( "muSync with Storage linked", function()

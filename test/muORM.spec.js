@@ -5,14 +5,14 @@
 
 
 mu.require( 'fs' );
-mu.require( 'muORM' );
+mu.require( '../src/muORM' );
 
 
 describe( "muORM", function()
 {
     //mu.activateDebug( );
 
-    var muORMMock = new mu.ORM.Schema( './testschema/' );
+    var muORMMock = new mu.ORM.Schema( 'test/testschema/' );
 
 	function entityExistInStorage( path, fileName )
 	{
@@ -39,7 +39,7 @@ describe( "muORM", function()
     it( "defines pathSchemas", function()
     {
         expect( muORMMock.pathSchemas ).toBeDefined( );
-        expect( muORMMock.pathSchemas ).toEqual( './testschema/' );
+        expect( muORMMock.pathSchemas ).toEqual( 'test/testschema/' );
     });
 
     it( "defines objectList", function()
@@ -53,8 +53,8 @@ describe( "muORM", function()
         muORMMock.setPathSchemas( 'test' );
         expect( muORMMock.pathSchemas ).toBe( 'test' );
 
-        muORMMock.setPathSchemas( './testschema/' );
-        expect( muORMMock.pathSchemas ).toBe( './testschema/' );
+        muORMMock.setPathSchemas( 'test/testschema/' );
+        expect( muORMMock.pathSchemas ).toBe( 'test/testschema/' );
     });
 
     it( "defines loadDBSchema( )", function()
@@ -66,14 +66,14 @@ describe( "muORM", function()
     {
         var muORMMock2 = new mu.ORM.Schema( 'testinvalidpath' );
 
-        expect( muORMMock.pathSchemas ).toEqual( './testschema/' );
+        expect( muORMMock.pathSchemas ).toEqual( 'test/testschema/' );
 
         expect( muORMMock2.pathSchemas ).toEqual( 'testinvalidpath' );
     });
 
     it( "is loading all DB schema from directory", function()
     {
-        var muORMMockDirectoryLoad = new mu.ORM.Schema( './testschema/' );
+        var muORMMockDirectoryLoad = new mu.ORM.Schema( 'test/testschema/' );
 
         muORMMockDirectoryLoad.loadAllDBSchema( );
 
@@ -90,7 +90,7 @@ describe( "muORM", function()
         expect( muORMTestRelationshipNN ).toBeDefined( );
         expect( muORMTestRelationshipNN2 ).toBeDefined( );
 
-	    if( !mu.runinbrowser )
+	    if( !mu.runinbrowser && mu.support_mysql )
 		    expect( muORMTestStoragePersistentMySQL ).toBeDefined( );
     });
 
@@ -275,7 +275,7 @@ describe( "muORM", function()
     });
 
 	//we have a MySQL driver ONLY on the server side
-	if( !mu.runinbrowser )
+	if( !mu.runinbrowser && mu.support_mysql )
 	it( "load muORMTestStoragePersistentMySQL schema, defines object and init the storage type on the object", function()
 	{
 		expect( muORMMock.loadDBSchema( 'muORMTestStoragePersistentMySQL' ) ).toBeTruthy();

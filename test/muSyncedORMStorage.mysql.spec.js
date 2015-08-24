@@ -6,11 +6,11 @@
  *
  */
 
-mu.require( 'muSync' );
-mu.require( 'muORM' );
-mu.require( 'muStorage' );
+mu.require( '../src/muSync' );
+mu.require( '../src/muORM' );
+mu.require( '../src/muStorage' );
 
-mu.require( 'muBrowser' );
+mu.require( '../src/muBrowser' );
 
 //mysql is server side specific
 if( !mu.runinbrowser )

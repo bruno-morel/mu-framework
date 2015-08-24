@@ -6,8 +6,8 @@
  *
  */
 
-mu.require( 'muRender' );
-mu.require( 'muBrowser' );
+mu.require( '../src/muRender' );
+mu.require( '../src/muBrowser' );
 
 
 describe( "muRender", function()

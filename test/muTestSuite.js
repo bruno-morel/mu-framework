@@ -7,7 +7,7 @@
 if( typeof window === 'undefined' )
     global[ 'mu' ] = require( '../src/mu.js' );
 
-mu.require( 'muJasmine' );
+mu.require( '../src/muJasmine' );
 
 //how much time the test takes to run (to be able to do some cleanup afterward)
 var scope = ( typeof window === 'undefined' ? global : window );
@@ -23,23 +23,50 @@ scope[ 'CONST_TEST_RUNLENGTH' ] = 1100;
             'mu.spec',
             'muStorage.spec',
             //'muStorage.mongodb.spec',
-            'muStorage.mysql.spec',
-            'muStorage.redis.spec',
             'muStorage.musync.spec',
             'muORM.spec',
-            'muORM.mysql.spec',
-            'muORM.redis.spec',
             'muBrowser.spec',
             'muSyncedStorage.spec',
-            'muSyncedStorage.mysql.spec',
-            'muSyncedStorage.redis.spec',
-            'muSyncedORMStorage.mysql.spec',
-            'muSyncedORMStorage.redis.spec',
             //due to HTTP client/server asymmetry we have to load different spec
             ( mu.runinbrowser ? 'muSync.client.spec' : 'muSync.serv.spec' ),
-            ( mu.runinbrowser ? 'muSyncedORM.client.spec' : 'muSyncedORM.serv.spec' )//,
+            ( mu.runinbrowser ? 'muSyncedORM.client.spec' : 'muSyncedORM.serv.spec' )/*,
+
+            'muStorage.mysql.spec',
+            'muORM.mysql.spec',
+            'muSyncedStorage.mysql.spec',
+            'muSyncedORMStorage.mysql.spec',
+
+            'muStorage.redis.spec',
+            'muORM.redis.spec',
+            'muSyncedStorage.redis.spec',
+            'muSyncedORMStorage.redis.spec'*/
+            //,
 //            'muRender.spec'
         ];
+
+    try{
+        require.resolve( 'mysql' );
+        specToTest.push( [
+            'muStorage.mysql.spec',
+            'muORM.mysql.spec',
+            'muSyncedStorage.mysql.spec',
+            'muSyncedORMStorage.mysql.spec'
+        ] );
+    }
+    catch( errorMySQL ){ console.log( 'NO MYSQL library present - mysql support will be ignored' ); }
+
+    try
+    {
+        require.resolve( 'redis' );
+        specToTest.push( [
+            'muStorage.redis.spec',
+            'muORM.redis.spec',
+            'muSyncedStorage.redis.spec',
+            'muSyncedORMStorage.redis.spec'//,
+        ] );
+    }
+    catch( errorMySQL ){ console.log( 'NO REDIS library present - redis support will be ignored' ); }
+
 
     var specPath = mu.runinbrowser ? './' : __dirname + '/';
 

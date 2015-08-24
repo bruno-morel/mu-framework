@@ -6,7 +6,7 @@
 
 //WARNING : for this test to run, the mongodb user must have access to the schema 'test' on localhost,
 //          OR you must change line 18 connection parameters
-mu.require( 'muStorage' );
+mu.require( '../src/muStorage' );
 
 //mongodb is server side specific
 if( !mu.runinbrowser )

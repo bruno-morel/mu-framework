@@ -5,8 +5,8 @@
  * muSync BDD (muJasmine) specification file for the server side
  *
  */
-mu.require( 'muSync' );
-mu.require( 'muBrowser' );
+mu.require( '../src/muSync' );
+mu.require( '../src/muBrowser' );
 
 
 describe( "muSync", function()
@@ -444,7 +444,7 @@ describe( "muSync", function()
 		var muSyncTestMix = function ( )
 		{
 			this.muSyncTestMixString = "name value is a string with this as default"
-			this.muSyncTestMixDate = new Date( "03/12/2012" );
+			this.muSyncTestMixDate = new Date( "03/12/2012 00:00:00 GMT" );
 			this.muSyncTestMixNumeric = 15;
 		};
 		function muSyncTestNumeric( )
@@ -504,7 +504,7 @@ describe( "muSync", function()
 		var muSyncTestMix = function ( )
 		{
 			this.muSyncTestMixString = "name value is a string with this as default"
-			this.muSyncTestMixDate = new Date( "03/12/2012" );
+			this.muSyncTestMixDate = new Date( "03/12/2012 00:00:00 GMT" );
 			this.muSyncTestMixNumeric = 15;
 		};
 		function muSyncTestNumeric( )
@@ -561,7 +561,7 @@ describe( "muSync", function()
 		var muSyncTestMix = function ( )
 		{
 			this.muSyncTestMixString = "name value is a string with this as default"
-			this.muSyncTestMixDate = new Date( "03/12/2012" );
+			this.muSyncTestMixDate = new Date( "03/12/2012 00:00:00 GMT" );
 			this.muSyncTestMixNumeric = 15;
 		};
 
@@ -614,7 +614,7 @@ describe( "muSync", function()
 		var muSyncTestMix = function ( )
 		{
 			this.muSyncTestMixString = "name value is a string with this as default"
-			this.muSyncTestMixDate = new Date( "03/12/2012" );
+			this.muSyncTestMixDate = new Date( "03/12/2012 00:00:00 GMT" );
 			this.muSyncTestMixNumeric = 15;
 		};
 
@@ -667,7 +667,7 @@ describe( "muSync", function()
 		var muSyncTestMix = function ( )
 		{
 			this.muSyncTestMixString = "name value is a string with this as default"
-			this.muSyncTestMixDate = new Date( "03/12/2012" );
+			this.muSyncTestMixDate = new Date( "03/12/2012 00:00:00 GMT" );
 			this.muSyncTestMixNumeric = 15;
 		};
 
@@ -712,7 +712,7 @@ describe( "muSync", function()
 		      {
 			      expect( responseValue.statusCode ).toEqual( 200 );
 			      expect( responseValue.contentType ).toEqual( 'text/html' );
-			      expect( responseValue.grabbedDatas ).toEqual( '<!DOCTYPE html><html><head><title>muSyncTestMix muUID=83d946e6-288a-2444-9187-23c8387ae597 properties</title></head><body><h1>83d946e6-288a-2444-9187-23c8387ae597</h1><details><dl><dt><dfn>muSyncStamp</dfn></dt><dd>' + mockTestMix1.muSyncStamp + '</dd><dt><dfn>muSyncTestMixString</dfn></dt><dd>name value is a string with this as default</dd><dt><dfn>muSyncTestMixDate</dfn></dt><dd>Mon Mar 12 2012 00:00:00 GMT-0400 (EDT)</dd><dt><dfn>muSyncTestMixNumeric</dfn></dt><dd>15</dd><dt><dfn>muUID</dfn></dt><dd>83d946e6-288a-2444-9187-23c8387ae597</dd></dl></details></body></html>' );
+			      expect( responseValue.grabbedDatas ).toEqual( '<!DOCTYPE html><html><head><title>muSyncTestMix muUID=83d946e6-288a-2444-9187-23c8387ae597 properties</title></head><body><h1>83d946e6-288a-2444-9187-23c8387ae597</h1><details><dl><dt><dfn>muSyncStamp</dfn></dt><dd>' + mockTestMix1.muSyncStamp + '</dd><dt><dfn>muSyncTestMixString</dfn></dt><dd>name value is a string with this as default</dd><dt><dfn>muSyncTestMixDate</dfn></dt><dd>2012-03-12T00:00:00.000Z</dd><dt><dfn>muSyncTestMixNumeric</dfn></dt><dd>15</dd><dt><dfn>muUID</dfn></dt><dd>83d946e6-288a-2444-9187-23c8387ae597</dd></dl></details></body></html>' );
 		      } );
 	});
 
@@ -722,7 +722,7 @@ describe( "muSync", function()
 		var muSyncTestMix = function ( )
 		{
 			this.muSyncTestMixString = "name value is a string with this as default"
-			this.muSyncTestMixDate = new Date( "03/12/2012" );
+			this.muSyncTestMixDate = new Date( "03/12/2012 00:00:00 GMT" );
 			this.muSyncTestMixNumeric = 15;
 		};
 
@@ -767,7 +767,7 @@ describe( "muSync", function()
 		      {
 			      expect( responseValue.statusCode ).toEqual( 200 );
 			      expect( responseValue.contentType ).toEqual( 'application/json' );
-			      expect( responseValue.grabbedDatas ).toEqual( '{"muUID":"83d946e6-288a-2444-9187-23c8387ae597","muSyncTestMixString":"name value is a string with this as default","muSyncTestMixDate":"2012-03-12T04:00:00.000Z","muSyncTestMixNumeric":15}' );
+			      expect( responseValue.grabbedDatas ).toEqual( '{"muUID":"83d946e6-288a-2444-9187-23c8387ae597","muSyncTestMixString":"name value is a string with this as default","muSyncTestMixDate":"2012-03-12T00:00:00.000Z","muSyncTestMixNumeric":15}' );
 		      } );
 	});
 

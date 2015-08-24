@@ -5,8 +5,8 @@
  * muSync using ORM BDD (muJasmine) specification file for the server side
  *
  */
-mu.require( 'muSync' );
-mu.require( 'muORM' );
+mu.require( '../src/muSync' );
+mu.require( '../src/muORM' );
 
 
 describe( "muSync with ORM schema linked", function()
@@ -17,7 +17,7 @@ describe( "muSync with ORM schema linked", function()
 	var muSyncMock;
 	var muORMMock;
 
-	muORMMock = new mu.ORM.Schema( 'testschemawithsync/' );
+	muORMMock = new mu.ORM.Schema( 'test/testschemawithsync/' );
     muORMMock.loadAllDBSchema( );
 
     muSyncMock = new mu.Sync.EndPoint( 'testsync/', 80, true, muORMMock );

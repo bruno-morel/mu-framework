@@ -31,6 +31,12 @@ mu.require( 'redis' );
                 ( userLogin != null ? '@' : '' ) +
                 ( storagePathOrURI == null ? 'localhost' : storagePathOrURI ) ) );
 
+        if( !mu.support_redis )
+        {
+            mu.error( 'No Redis driver present - skipping ' + storageURL );
+            return;
+        }
+
         mySQLDrv.driverName = "redis";
         mySQLDrv.enginePath = ( mu.runinbrowser ? 'muDrv.redis.js' : __filename );
 

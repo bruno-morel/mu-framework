@@ -7,8 +7,8 @@
  */
 
 
-mu.require( 'muStorage' );
-mu.require( 'muORM' );
+mu.require( '../src/muStorage' );
+mu.require( '../src/muORM' );
 
 if( !mu.runinbrowser )
     describe( "muORM with Redis as storage backend", function()

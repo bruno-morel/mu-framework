@@ -1,5 +1,5 @@
 {
     "muORMTestDate1":     { "type" : "date", "defaultValue" : "06/20/2012" },
     "muORMTestDate2":     { "type" : "date" },
-    "muORMTestDate3":     { "defaultValue" : "06/20/2012"  }
+    "muORMTestDate3":     { "defaultValue" : "06/20/2012 00:00:00 GMT"  }
 }
