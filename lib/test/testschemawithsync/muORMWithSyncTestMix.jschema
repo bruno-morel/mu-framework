@@ -1,5 +1,0 @@
-{
-    "muORMWithSyncTestMixString":       { "type" : "string", "defaultValue" : "name value is a string with this as default" },
-    "muORMWithSyncTestMixDate":         { "type" : "date", "defaultValue" : "03/12/2012" },
-    "muORMWithSyncTestMixNumeric":      { "type" : "numeric", "defaultValue" : 15 }
-}

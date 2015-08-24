@@ -1,6 +1,0 @@
-{
-    "muORMTestStorageTypeSessionProperty1":    { "type" : "string", "defaultValue" : "session property 1 string" },
-    "muORMTestStorageTypeSessionProperty2":    { "type" : "string", "defaultValue" : "session property 2 string" },
-    "muORMTestStorageTypeSessionProperty3":    { "type" : "string", "defaultValue" : "session property 3 string" },
-    "muStorageType" : "session"
-}

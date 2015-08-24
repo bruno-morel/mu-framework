@@ -1,5 +1,0 @@
-{
-    "muORMTestNumeric1":    { "type" : "numeric", "defaultValue" : 15 },
-    "muORMTestNumeric2":    { "type" : "numeric" },
-    "muORMTestNumeric3":    { "defaultValue" : 15 }
-}

@@ -1,5 +1,0 @@
-{
-    "muORMWithSyncTestNumeric1":    { "type" : "numeric", "defaultValue" : 15 },
-    "muORMWithSyncTestNumeric2":    { "type" : "numeric" },
-    "muORMWithSyncTestNumeric3":    { "defaultValue" : 15 }
-}
