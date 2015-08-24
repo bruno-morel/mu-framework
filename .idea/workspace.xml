@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ee6bd358-4aa2-47a2-b73b-837d85f3434f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/clientside-test.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/serverside-test.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/crypto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/drivers/storage/muDrv.empty.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/drivers/storage/muDrv.mongodb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/drivers/storage/muDrv.musync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/drivers/storage/muDrv.mysql.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/drivers/storage/muDrv.redis.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/fs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/mu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/muAPI.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/muBrowser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/muJasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/muORM.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/muRender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/muStorage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/muSync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/jasmine-server/JasmineAdapter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/jasmine-server/async-callback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/jasmine-server/jasmine-1.1.0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/jasmine/JasmineAdapter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/jasmine/jasmine-1.1.0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/jasmine/jasmine-html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/jasmine/jasmine-mu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/jasmine/jasmine.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/jasmine/jasmine_favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/mu.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muBrowser.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muORM.mysql.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muORM.redis.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muORM.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muRender.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muStorage.mongodb.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muStorage.musync.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muStorage.mysql.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muStorage.redis.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muStorage.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muSync.client.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muSync.serv.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muSync.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muSyncedORM.client.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muSyncedORM.serv.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muSyncedORM.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muSyncedORMStorage.musync.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muSyncedORMStorage.mysql.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muSyncedORMStorage.redis.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muSyncedStorage.mysql.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muSyncedStorage.redis.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muSyncedStorage.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muTestSuite.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/muTestSuite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testdata/muORMTestDate/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testdata/muORMTestMix/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschema/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschema/muORMTestDate.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschema/muORMTestMix.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschema/muORMTestNumeric.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschema/muORMTestRelationship11.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschema/muORMTestRelationship1N.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschema/muORMTestRelationshipNN.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschema/muORMTestRelationshipNN2.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschema/muORMTestStoragePersistent.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschema/muORMTestStoragePersistentMySQL.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschema/muORMTestStoragePersistentWithPath.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschema/muORMTestStorageSession.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschema/muORMTestStorageVolatile.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschema/muORMTestString.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschemawithsync/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschemawithsync/muORMWithSyncTestMix.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testschemawithsync/muORMWithSyncTestNumeric.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestDate.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestMix.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestNumeric.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestNumeric/b8f37184-6597-52da-6acf-3f8df978ab77.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestNumeric/c1316fdc-20c5-e60f-9110-5375baabe8aa.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestNumeric/ccec5afc-8909-0997-070a-9242af064695.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestRelationship11.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestRelationship1N.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestRelationshipNN.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestRelationshipNN2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestStoragePersistent.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestStoragePersistentWithPath.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestStorageSession.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestStorageVolatile.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMTestString.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMWithSyncTestNumeric.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMWithSyncTestNumeric/22a02f3d-0218-b8d6-8e99-b6ba7aa65674.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muORMWithSyncTestNumeric/3995306d-61a8-8b33-7a8d-8f8b77807a6f.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muSyncTestMix.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muSyncTestMix/83d946e6-288a-2444-9187-23c8387ae597.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muSyncTestMix/a4eebc70-5d1e-519b-64aa-0aabdd02fe2b.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muSyncTestNumeric.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muSyncTestNumeric/0b945338-494d-ff61-201d-99a014e46e95.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testsync/v1/muSyncTestNumeric/0ba93991-e4cc-b30e-1d7b-796c1d54aa19.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testtemplates/header.jtmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/test/testtemplates/index.jtmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/api/v1/schema/dish.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/api/v1/schema/ingredient.jschema" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/incWaiter-api.spec.js" afterPath="" />
+    </list>
+    <ignored path="mu.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="mu" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="4" />
+    <option name="y" value="23" />
+    <option name="width" value="1362" />
+    <option name="height" value="745" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee6bd358-4aa2-47a2-b73b-837d85f3434f" name="Default" comment="" />
+      <created>1440428997372</created>
+      <option name="number" value="Default" />
+      <updated>1440428997372</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="4" y="23" width="1362" height="745" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>

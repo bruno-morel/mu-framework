@@ -1,0 +1,16 @@
+{
+    "muORMTestObjectProperty" :     { "type" : "string", "defaultValue" : "1 to 1 default string value" },
+    "muORMTestRelationshipObject" :
+    {
+        "type"          : "relationship",
+        "cardinality"   : 11,
+        "destination"   : "muORMTestNumeric",
+        "inverse"       : null,
+        "defaultValue"  :
+        {
+            "muORMTestNumeric1":    15,
+            "muORMTestNumeric2":    0,
+            "muORMTestNumeric3":    15
+        }
+    }
+}

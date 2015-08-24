@@ -1,0 +1,5 @@
+{
+    "muORMTestString1":    { "type" : "string", "defaultValue" : "name value is a string with this as default" },
+    "muORMTestString2":    { "type" : "string" },
+    "muORMTestString3":    { "defaultValue" : "name value is a string with this as default"  }
+}

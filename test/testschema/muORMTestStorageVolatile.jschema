@@ -1,0 +1,5 @@
+{
+    "muORMTestStorageTypeVolatileProperty1":    { "type" : "string", "defaultValue" : "volatile property 1 string" },
+    "muORMTestStorageTypeVolatileProperty2":    { "type" : "string", "defaultValue" : "volatile property 2 string" },
+    "muORMTestStorageTypeVolatileProperty3":    { "type" : "string", "defaultValue" : "volatile property 3 string" }
+}
