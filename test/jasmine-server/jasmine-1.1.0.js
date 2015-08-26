@@ -4,7 +4,7 @@
  */
 
 
-var jasmineClient       = require( '../jasmine/jasmine-1.1.0.js' );
+var jasmineClient       = require( './jasmine-1.1.0.js' );
 var jasmine             = jasmineClient.jasmine;
 //var jasmineReporters    = require('./jasmine-mu.js');
 //var jasmineNode         = jasmineReporters.jasmine;

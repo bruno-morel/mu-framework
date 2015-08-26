@@ -462,7 +462,7 @@ mu.require( 'timers' );
 		                            muSyncObject.defaultUserLogin + ':' + muSyncObject.defaultUserPass :
 									null );
 
-	    mu.log( 'Incoming Request : ' + ( muSyncObject.isSecure ? 'HTTPS ' : 'HTTP ' ) + request.method + ' - ' +
+	    mu.debug( 'Incoming Request : ' + ( muSyncObject.isSecure ? 'HTTPS ' : 'HTTP ' ) + request.method + ' - ' +
 	            debasedAuth + ( debasedAuth != '' ? '@' : '' ) + request.url );
 
 	    //fail safe on default values
