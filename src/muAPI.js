@@ -20,19 +20,19 @@ mu.require( 'muStorage' );
 
 	exports.Node           = function
 	(
-		schemaPath,
-		defaultStorageType,
-		defaultStorageDriver,
-		defaultStorageURI,
-		defaultStorageLogin,
-		defaultStoragePassword,
-		defaultStorageParams,
+		apiSchemaPath,
 		apiServerURL,
 		apiServerPort,
 		apiIsBrowsable,
 		apiVersion,
 		apiKeyPath,
-		apiCertPath
+		apiCertPath,
+		defaultStorageType,
+		defaultStorageDriver,
+		defaultStorageURI,
+		defaultStorageLogin,
+		defaultStoragePassword,
+		defaultStorageParams
 	)
 	{
 		this.DefaultStorage = new mu.Storage.Driver
@@ -45,7 +45,7 @@ mu.require( 'muStorage' );
 				defaultStorageParams
 			);
 
-		this.Schemas = new mu.ORM.Schema( schemaPath, this.DefaultStorage );
+		this.Schemas = new mu.ORM.Schema( apiSchemaPath, this.DefaultStorage );
 		this.Schemas.loadAllDBSchema( );
 
 		this.EndPoint = new mu.Sync.EndPoint
@@ -63,13 +63,13 @@ mu.require( 'muStorage' );
 	exports.Node.prototype.start = function( )
 	{
 		this.EndPoint.start( );
-		mu.debug( this.EndPoint.APIName + ' API is connected at ' + this.EndPoint.endpoint + ':' + this.EndPoint.endpointPort );
+		mu.warn( this.EndPoint.APIName + ' API is connected at ' + this.EndPoint.rootURL + ':' + this.EndPoint.endpointPort );
 	};
 
 	exports.Node.prototype.stop = function( )
 	{
 		this.EndPoint.stop( );
-		mu.debug( this.EndPoint.APIName + ' API stopped at ' + this.EndPoint.endpoint + ':' + this.EndPoint.endpointPort );
+		mu.warn( this.EndPoint.APIName + ' API stopped at ' + this.EndPoint.rootURL + ':' + this.EndPoint.endpointPort );
 	};
 
 	return exports;

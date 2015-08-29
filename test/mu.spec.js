@@ -62,11 +62,11 @@ describe( "mu", function()
 
     it( "defines mu constructor and set muPath from parameter", function()
     {
-        var muMock = new mu.mu( );
+        var muMock = new mu.muSetPath( );
         expect( muMock ).toBeDefined( );
         expect( muMock.muPath ).toBeDefined();
 
-        var muMock = new mu.mu( 'testpath' );
+        var muMock = new mu.muSetPath( 'testpath' );
         expect( muMock.muPath ).toBe( 'testpath' );
     });
 

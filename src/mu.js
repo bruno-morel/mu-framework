@@ -12,22 +12,20 @@
 //if( typeof window != "undefined" )
 //    var exports = [ ];
 
-    exports.mu = function( muPath )
+
+    exports.muPath          = typeof window !== 'undefined' ? buildIncludes() : __dirname + '/';
+    exports.muSetPath       = function( pathMuLib )
     {
         this.muPath = '';
-        if( muPath != null )
-            this.muPath = muPath;
-
-        else if( typeof window === "undefined" )
-            this.muPath = __dirname;
-
-        else
-            this.muPath = '';
+        if( pathMuLib != null && pathMuLib != '' )
+            this.muPath = pathMuLib;
 
         this.global = ( function( ) { return this; } )( );
 
         this.softRequire = false;
     };
+
+    exports.appRoot         = typeof window !== 'undefined' ? window.location.href : buildAppRoot();
 
     exports.runinbrowser    = typeof window != "undefined";
     exports.runiniOS        = function( )
@@ -277,7 +275,7 @@
 
 
     // some local function
-    var buildIncludes = function( )
+    function buildIncludes( )
     {
         // in node.js includes are unreachable
         if( typeof window == "undefined" )
@@ -308,9 +306,19 @@
             return exports.includes[ 'mu' ].substring( 0, exports.includes[ 'mu' ].lastIndexOf( '/' ) + 1 );
 
         return '';
-    };
+    }
 
-    exports.muPath          = typeof window !== 'undefined' ? buildIncludes() : __dirname + '/';
+    function buildAppRoot( )
+    {
+        var appExecutionPath = process.cwd();
+
+        appExecutionPath = appExecutionPath.split( '/test' ) [ 0 ];
+        appExecutionPath = appExecutionPath.split( 'test' ) [ 0 ];
+        appExecutionPath = appExecutionPath.split( '/src' ) [ 0 ];
+        appExecutionPath = appExecutionPath.split( 'src' ) [ 0 ];
+
+        return appExecutionPath;
+    }
 
     if( typeof global !== 'undefined' ) global[ 'mu' ] = exports;
 } ) ( typeof exports === 'undefined' ? this[ 'mu' ] = { } : exports );

@@ -1,4 +1,4 @@
-mu
+mu Framework
 ==
 
 The aim of mu is to provide a no-question-asked auto-scale-as-you-need web framework.
